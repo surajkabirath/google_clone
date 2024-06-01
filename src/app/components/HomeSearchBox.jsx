@@ -54,6 +54,7 @@ const HomeSearchBox = () => {
           {randomSearchLoading ? "Loading..." : "I'm Feeling Lucky"}
         </button>
       </div>
+      <p className="text-gray-400 pt-6 text-sm">Google offered in: <span className="text-blue-200" >English </span></p>
     </div>
   );
 };

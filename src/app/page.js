@@ -9,6 +9,7 @@ const page = () => {
     <Header/>
     <GoogleLogo/>
     <HomeSearchBox/>
+
     </>
   )
 }
