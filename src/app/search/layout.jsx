@@ -1,8 +1,12 @@
+import SearchHeader from '@/components/SearchHeader'
 import React from 'react'
 
-const layout = () => {
+const layout = ({children}) => {
   return (
-    <div className='text-white'>layout</div>
+    <div className='text-white'>
+      <SearchHeader/>
+      {children}
+    </div>
   )
 }
 

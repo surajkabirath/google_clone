@@ -1,15 +1,14 @@
-import React from 'react'
-import Header from './components/Header'
-import GoogleLogo from './components/GoogleLogo'
-import HomeSearchBox from './components/HomeSearchBox'
+import GoogleLogo from '@/components/GoogleLogo'
+import Header from '@/components/Header'
+import HomeSearchBox from '@/components/HomeSearchBox'
 
 const page = () => {
   return (
     <>
-    <Header/>
-    <GoogleLogo/>
-    <HomeSearchBox/>
-
+    
+<Header/>
+<GoogleLogo/>
+<HomeSearchBox/>
     </>
   )
 }
