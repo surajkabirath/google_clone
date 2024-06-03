@@ -25,9 +25,9 @@ const SearchHeaderOptions = () => {
       case "News":
         path = "news";
         break;
-        case "Webs":
-          path = "webs";
-          break;
+      case "Webs":
+        path = "webs";
+        break;
       case "Maps":
         path = "maps";
         break;
@@ -43,7 +43,7 @@ const SearchHeaderOptions = () => {
     }
 
     router.push(`/search/${path}?searchTerm=${searchTerm}`);
-    setShowMoreOptions(false); // Close the pop-up after selecting an option
+    setShowMoreOptions(false);
   };
 
   const toggleMoreOptions = () => {
@@ -51,7 +51,7 @@ const SearchHeaderOptions = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (!event.target.closest('.more-options-container')) {
+    if (!event.target.closest(".more-options-container")) {
       setShowMoreOptions(false);
     }
   };
@@ -152,4 +152,3 @@ const SearchHeaderOptions = () => {
 };
 
 export default SearchHeaderOptions;
-
