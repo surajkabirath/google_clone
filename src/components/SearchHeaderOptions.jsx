@@ -1,10 +1,12 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 const SearchHeaderOptions = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const searchTerm = searchParams.get("searchTerm");
   const pathname = usePathname();
+
   const selectTab = (tab) => {
     let path;
     switch (tab) {
@@ -30,7 +32,6 @@ const SearchHeaderOptions = () => {
 
   return (
     <div>
-      {" "}
       <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start lg:pl-52 text-gray-700 text-sm">
         <div
           onClick={() => selectTab("All")}
@@ -49,7 +50,7 @@ const SearchHeaderOptions = () => {
           <p>Images</p>
         </div>
         <div
-          onClick={() => selectTab("shopping")}
+          onClick={() => selectTab("Shopping")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/shopping" && "!text-blue-600 !border-blue-600"
           }`}
@@ -57,7 +58,7 @@ const SearchHeaderOptions = () => {
           <p>Shopping</p>
         </div>
         <div
-          onClick={() => selectTab("videos")}
+          onClick={() => selectTab("Videos")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/videos" && "!text-blue-600 !border-blue-600"
           }`}
@@ -65,7 +66,7 @@ const SearchHeaderOptions = () => {
           <p>Videos</p>
         </div>
         <div
-          onClick={() => selectTab("news")}
+          onClick={() => selectTab("News")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/news" && "!text-blue-600 !border-blue-600"
           }`}
