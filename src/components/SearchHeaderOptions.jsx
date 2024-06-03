@@ -49,7 +49,7 @@ const SearchHeaderOptions = () => {
           <p>Images</p>
         </div>
         <div
-          onClick={() => selectTab("Images")}
+          onClick={() => selectTab("shopping")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/shopping" && "!text-blue-600 !border-blue-600"
           }`}
@@ -57,7 +57,7 @@ const SearchHeaderOptions = () => {
           <p>Shopping</p>
         </div>
         <div
-          onClick={() => selectTab("Images")}
+          onClick={() => selectTab("videos")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/videos" && "!text-blue-600 !border-blue-600"
           }`}
@@ -65,7 +65,7 @@ const SearchHeaderOptions = () => {
           <p>Videos</p>
         </div>
         <div
-          onClick={() => selectTab("Images")}
+          onClick={() => selectTab("news")}
           className={`flex items-center space-x-1 border-b-4 border-transparent text-[#9aa0a6] active:text-blue-500 cursor-pointer pb-3 px-2 ${
             pathname === "/search/news" && "!text-blue-600 !border-blue-600"
           }`}
